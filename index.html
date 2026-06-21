@@ -14,43 +14,43 @@
 
 :root{
 
-    --green:#2F6E5A;
-    --green-light:#42836D;
+--green:#2F6E5A;
+--green-light:#42836D;
 
-    --bg:#F8FAF9;
-    --white:#FFFFFF;
+--bg:#F8FAF9;
+--white:#FFFFFF;
 
-    --text:#25322C;
-    --muted:#6C7872;
+--text:#25322C;
+--muted:#6C7872;
 
-    --glass:rgba(255,255,255,.78);
+--glass:rgba(255,255,255,.78);
 }
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
 
-    font-family:'Inter',sans-serif;
+font-family:'Inter',sans-serif;
 
-    background:
-    radial-gradient(
-        circle at top,
-        rgba(47,110,90,.04),
-        transparent 45%
-    ),
-    var(--bg);
+background:
+radial-gradient(
+circle at top,
+rgba(47,110,90,.04),
+transparent 45%
+),
+var(--bg);
 
-    color:var(--text);
+color:var(--text);
 
-    overflow-x:hidden;
+overflow-x:hidden;
 }
 
 /* ===================================
@@ -59,79 +59,79 @@ HEADER
 
 header{
 
-    position:sticky;
+position:sticky;
 
-    top:0;
+top:0;
 
-    z-index:1000;
+z-index:1000;
 
-    background:rgba(255,255,255,.88);
+background:rgba(255,255,255,.88);
 
-    backdrop-filter:blur(20px);
+backdrop-filter:blur(20px);
 
-    border-bottom:1px solid rgba(0,0,0,.04);
+border-bottom:1px solid rgba(0,0,0,.04);
 
-    display:flex;
+display:flex;
 
-    justify-content:space-between;
+justify-content:space-between;
 
-    align-items:center;
+align-items:center;
 
-    padding:18px 50px;
+padding:18px 50px;
 }
 
 .header-logo{
 
-    width:75px;
+width:75px;
 
-    transition:.3s ease;
+transition:.3s ease;
 }
 
 .header-logo:hover{
 
-    transform:scale(1.05);
+transform:scale(1.05);
 }
 
 .qr-container{
 
-    display:flex;
+display:flex;
 
-    gap:20px;
+gap:20px;
 }
 
 .qr-link{
 
-    text-decoration:none;
+text-decoration:none;
 
-    text-align:center;
+text-align:center;
 
-    color:var(--green);
+color:var(--green);
 
-    font-size:.85rem;
+font-size:.85rem;
 }
 
 .qr-link img{
 
-    width:72px;
+width:72px;
 
-    border-radius:14px;
+border-radius:14px;
 
-    background:white;
+background:white;
 
-    padding:4px;
+padding:4px;
 
-    box-shadow:
-    0 8px 20px rgba(0,0,0,.06);
+box-shadow:
+0 8px 20px rgba(0,0,0,.06);
 
-    transition:.3s ease;
+transition:.3s ease;
 }
 
 .qr-link:hover img{
 
-    transform:translateY(-4px);
+transform:translateY(-4px);
 
-    box-shadow:
-    0 20px 40px rgba(55,55,55,.18);
+box-shadow:
+0 20px 40px rgba(55,55,55,.18);
 }
 
 /* ===================================
@@ -140,95 +140,95 @@ HERO
 
 .hero{
 
-    max-width:1400px;
+max-width:1400px;
 
-    margin:auto;
+margin:auto;
 
-    padding:90px 30px 60px;
+padding:90px 30px 60px;
 
-    text-align:center;
+text-align:center;
 }
 
 .hero-logo{
 
-    width:900px;
+width:900px;
 
-    max-width:95%;
+max-width:95%;
 
-    margin-bottom:35px;
+margin-bottom:35px;
 
-    animation:float 8s ease-in-out infinite;
+animation:float 8s ease-in-out infinite;
 }
 
 @keyframes float{
 
-    0%,100%{
-        transform:translateY(0);
-    }
+0%,100%{
+transform:translateY(0);
+}
 
-    50%{
-        transform:translateY(-10px);
-    }
+50%{
+transform:translateY(-10px);
+}
 }
 
 .hero-subtitle{
 
-    color:var(--green);
+color:var(--green);
 
-    text-transform:uppercase;
+text-transform:uppercase;
 
-    letter-spacing:4px;
+letter-spacing:4px;
 
-    font-size:.9rem;
+font-size:.9rem;
 
-    font-weight:600;
+font-weight:600;
 
-    margin-bottom:20px;
+margin-bottom:20px;
 }
 
 .hero-title{
 
-    font-size:4rem;
+font-size:4rem;
 
-    font-weight:300;
+font-weight:300;
 
-    color:var(--green);
+color:var(--green);
 
-    margin-bottom:35px;
+margin-bottom:35px;
 }
 
 .hero-card{
 
-    max-width:900px;
+max-width:900px;
 
-    margin:auto;
+margin:auto;
 
-    padding:40px;
+padding:40px;
 
-    background:var(--glass);
+background:var(--glass);
 
-    backdrop-filter:blur(18px);
+backdrop-filter:blur(18px);
 
-    border-radius:32px;
+border-radius:32px;
 
-    border:1px solid rgba(255,255,255,.95);
+border:1px solid rgba(255,255,255,.95);
 
-    line-height:1.9;
+line-height:1.9;
 
-    color:var(--muted);
+color:var(--muted);
 
-    box-shadow:
-    0 10px 35px rgba(0,0,0,.04);
+box-shadow:
+0 10px 35px rgba(0,0,0,.04);
 
-    transition:.35s ease;
+transition:.35s ease;
 }
 
 .hero-card:hover{
 
-    transform:translateY(-5px);
+transform:translateY(-5px);
 
-    box-shadow:
-    0 25px 60px rgba(55,55,55,.18);
+box-shadow:
+0 25px 60px rgba(55,55,55,.18);
 }
 
 /* ===================================
@@ -237,89 +237,89 @@ VISION
 
 .vision-section{
 
-    max-width:1400px;
+max-width:1400px;
 
-    margin:80px auto;
+margin:80px auto;
 
-    padding:0 30px;
+padding:0 30px;
 }
 
 .vision-card{
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:1fr 1fr;
+grid-template-columns:1fr 1fr;
 
-    gap:60px;
+gap:60px;
 
-    align-items:center;
+align-items:center;
 
-    background:var(--glass);
+background:var(--glass);
 
-    backdrop-filter:blur(18px);
+backdrop-filter:blur(18px);
 
-    border-radius:35px;
+border-radius:35px;
 
-    padding:50px;
+padding:50px;
 
-    border:1px solid rgba(255,255,255,.95);
+border:1px solid rgba(255,255,255,.95);
 
-    box-shadow:
-    0 10px 35px rgba(0,0,0,.04);
+box-shadow:
+0 10px 35px rgba(0,0,0,.04);
 
-    transition:.35s ease;
+transition:.35s ease;
 }
 
 .vision-card:hover{
 
-    transform:translateY(-6px);
+transform:translateY(-6px);
 
-    box-shadow:
-    0 25px 60px rgba(55,55,55,.18);
+box-shadow:
+0 25px 60px rgba(55,55,55,.18);
 }
 
 .section-tag{
 
-    display:inline-block;
+display:inline-block;
 
-    padding:10px 18px;
+padding:10px 18px;
 
-    border-radius:999px;
+border-radius:999px;
 
-    background:rgba(47,110,90,.08);
+background:rgba(47,110,90,.08);
 
-    color:var(--green);
+color:var(--green);
 
-    font-size:.85rem;
+font-size:.85rem;
 
-    font-weight:600;
+font-weight:600;
 
-    margin-bottom:20px;
+margin-bottom:20px;
 }
 
 .vision-text h2{
 
-    font-size:2.6rem;
+font-size:2.6rem;
 
-    color:var(--green);
+color:var(--green);
 
-    margin-bottom:25px;
+margin-bottom:25px;
 }
 
 .vision-text p{
 
-    line-height:1.9;
+line-height:1.9;
 
-    color:var(--muted);
+color:var(--muted);
 }
 
 .vision-image img{
 
-    width:100%;
+width:100%;
 
-    display:block;
+display:block;
 
-    border-radius:24px;
+border-radius:24px;
 }
 
 </style>
@@ -330,96 +330,97 @@ VISION
 
 <header>
 
-    <img
-        src="R-logo.png"
-        alt="Reverent Logo"
-        class="header-logo">
+<img
+src="R-logo.png"
+alt="Reverent Logo"
+class="header-logo">
 
-    <div class="qr-container">
+<div class="qr-container">
 
-        <a href="https://www.facebook.com/profile.php?id=61590277268026"
-           target="_blank"
-           class="qr-link">
+<a href="https://www.facebook.com/profile.php?id=61590277268026"
+target="_blank"
+class="qr-link">
 
-            <img src="fbqr.png" alt="Facebook QR">
-            <div>Facebook</div>
+<img src="fbqr.png" alt="Facebook QR">
+<div>Facebook</div>
 
-        </a>
+</a>
 
-        <a href="https://www.instagram.com/reverent_automotive_detailing/"
-           target="_blank"
-           class="qr-link">
+<a href="https://www.instagram.com/reverent_automotive_detailing/"
+target="_blank"
+class="qr-link">
 
-            <img src="instaqr.png" alt="Instagram QR">
-            <div>Instagram</div>
+<img src="instaqr.png" alt="Instagram QR">
+<div>Instagram</div>
 
-        </a>
+</a>
 
-    </div>
+</div>
 
 </header>
 
 <section class="hero">
 
-    <img
-        src="logo.png"
-        alt="Reverent Automotive Detailing"
-        class="hero-logo">
+<img
+src="logo.png"
+alt="Reverent Automotive Detailing"
+class="hero-logo">
 
-    <div class="hero-subtitle">
-        PREMIUM MOBILE AUTOMOTIVE DETAILING
-    </div>
+<div class="hero-subtitle">
+PREMIUM MOBILE AUTOMOTIVE DETAILING
+</div>
 
-    <h1 class="hero-title">
-        Refined Vehicle Care.<br>
-        Delivered To You.
-    </h1>
+<h1 class="hero-title">
+Refined Vehicle Care.<br>
+Delivered To You.
+</h1>
 
-    <div class="hero-card">
+<div class="hero-card">
 
-        Reverent Automotive Detailing is preparing for launch across The Gold Coast and surrounding areas.
+Reverent Automotive Detailing is preparing for launch across The Gold Coast and surrounding areas.
 
-        Every service, product and process is being carefully selected to deliver exceptional vehicle presentation, protection and care directly to your home or workplace.
+Every service, product and process is being carefully selected to deliver exceptional vehicle presentation, protection and care directly to your home or workplace.
 
-        Built around professional equipment, premium products and meticulous attention to detail, Reverent is being developed to provide a truly premium mobile detailing experience.
+Built around professional equipment, premium products and meticulous attention to detail, Reverent is being developed to provide a truly premium mobile detailing experience.
 
-    </div>
+</div>
 
 </section>
 
 <section class="vision-section">
 
-    <div class="vision-card">
+<div class="vision-card">
 
-        <div class="vision-text">
+<div class="vision-text">
 
-            <span class="section-tag">
-                THE REVERENT VISION
-            </span>
+<span class="section-tag">
+THE REVERENT VISION
+</span>
 
-            <h2>
-                Built With Purpose
-            </h2>
+<h2>
+Built With Purpose
+</h2>
 
-            <p>
-                Reverent Automotive Detailing is being built from the ground up with a commitment to professionalism, exceptional workmanship and customer-focused service.
+<p>
+Reverent Automotive Detailing is being built from the ground up with a commitment to professionalism, exceptional workmanship and customer-focused service.
 
-                Every component of the business, from equipment selection to service processes and vehicle presentation, is being carefully planned to create a premium experience that stands apart.
-            </p>
+Every component of the business, from equipment selection to service processes and vehicle presentation, is being carefully planned to create a premium experience that stands apart.
+</p>
 
-        </div>
+</div>
 
-        <div class="vision-image">
+<div class="vision-image">
 
-            <img
-                src="reverent-traffic-concept.png"
-                alt="Reverent Concept Vehicle">
+<img
+src="reverent-traffic-concept.png"
+alt="Reverent Concept Vehicle">
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
+
 <style>
 
 /* ===================================
@@ -428,80 +429,80 @@ SCROLLING SERVICES
 
 .scroll-section{
 
-    margin:100px 0;
+margin:100px 0;
 
-    overflow:hidden;
+overflow:hidden;
 }
 
 .scroll-track{
 
-    display:flex;
+display:flex;
 
-    gap:25px;
+gap:25px;
 
-    width:max-content;
+width:max-content;
 
-    animation:scroll 35s linear infinite;
+animation:scroll 35s linear infinite;
 }
 
 .scroll-track:hover{
 
-    animation-play-state:paused;
+animation-play-state:paused;
 }
 
 @keyframes scroll{
 
-    from{
-        transform:translateX(0);
-    }
+from{
+transform:translateX(0);
+}
 
-    to{
-        transform:translateX(-50%);
-    }
+to{
+transform:translateX(-50%);
+}
 }
 
 .feature-card{
 
-    width:340px;
+width:340px;
 
-    padding:35px;
+padding:35px;
 
-    background:var(--glass);
+background:var(--glass);
 
-    backdrop-filter:blur(18px);
+backdrop-filter:blur(18px);
 
-    border-radius:28px;
+border-radius:28px;
 
-    border:1px solid rgba(255,255,255,.95);
+border:1px solid rgba(255,255,255,.95);
 
-    transition:.35s ease;
+transition:.35s ease;
 
-    box-shadow:
-    0 10px 35px rgba(0,0,0,.04);
+box-shadow:
+0 10px 35px rgba(0,0,0,.04);
 }
 
 .feature-card:hover{
 
-    transform:translateY(-8px);
+transform:translateY(-8px);
 
-    box-shadow:
-    0 30px 70px rgba(50,50,50,.18);
+box-shadow:
+0 30px 70px rgba(50,50,50,.18);
 }
 
 .feature-card h3{
 
-    color:var(--green);
+color:var(--green);
 
-    margin-bottom:15px;
+margin-bottom:15px;
 
-    font-size:1.25rem;
+font-size:1.25rem;
 }
 
 .feature-card p{
 
-    color:var(--muted);
+color:var(--muted);
 
-    line-height:1.8;
+line-height:1.8;
 }
 
 /* ===================================
@@ -510,59 +511,59 @@ TRUST SECTION
 
 .trust-section{
 
-    max-width:1400px;
+max-width:1400px;
 
-    margin:auto;
+margin:auto;
 
-    padding:20px 30px 100px;
+padding:20px 30px 100px;
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(3,1fr);
 
-    gap:25px;
+gap:25px;
 }
 
 .trust-box{
 
-    padding:40px;
+padding:40px;
 
-    background:var(--glass);
+background:var(--glass);
 
-    backdrop-filter:blur(18px);
+backdrop-filter:blur(18px);
 
-    border-radius:30px;
+border-radius:30px;
 
-    border:1px solid rgba(255,255,255,.95);
+border:1px solid rgba(255,255,255,.95);
 
-    transition:.35s ease;
+transition:.35s ease;
 
-    box-shadow:
-    0 10px 35px rgba(0,0,0,.04);
+box-shadow:
+0 10px 35px rgba(0,0,0,.04);
 }
 
 .trust-box:hover{
 
-    transform:translateY(-8px);
+transform:translateY(-8px);
 
-    box-shadow:
-    0 30px 70px rgba(50,50,50,.18);
+box-shadow:
+0 30px 70px rgba(50,50,50,.18);
 }
 
 .trust-box h3{
 
-    color:var(--green);
+color:var(--green);
 
-    margin-bottom:18px;
+margin-bottom:18px;
 
-    font-size:1.4rem;
+font-size:1.4rem;
 }
 
 .trust-box p{
 
-    color:var(--muted);
+color:var(--muted);
 
-    line-height:1.9;
+line-height:1.9;
 }
 
 /* ===================================
@@ -571,338 +572,339 @@ CONTACT SECTION
 
 .contact-section{
 
-    max-width:1400px;
+max-width:1400px;
 
-    margin:auto;
+margin:auto;
 
-    padding:0 30px 120px;
+padding:0 30px 120px;
 }
 
 .contact-panel{
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:1fr 1fr;
+grid-template-columns:1fr 1fr;
 
-    gap:50px;
+gap:50px;
 
-    background:var(--glass);
+background:var(--glass);
 
-    backdrop-filter:blur(18px);
+backdrop-filter:blur(18px);
 
-    border-radius:35px;
+border-radius:35px;
 
-    border:1px solid rgba(255,255,255,.95);
+border:1px solid rgba(255,255,255,.95);
 
-    padding:55px;
+padding:55px;
 
-    box-shadow:
-    0 10px 35px rgba(0,0,0,.04);
+box-shadow:
+0 10px 35px rgba(0,0,0,.04);
 }
 
 .contact-info h2{
 
-    font-size:2.6rem;
+font-size:2.6rem;
 
-    color:var(--green);
+color:var(--green);
 
-    margin-bottom:20px;
+margin-bottom:20px;
 }
 
 .contact-info p{
 
-    color:var(--muted);
+color:var(--muted);
 
-    line-height:1.9;
+line-height:1.9;
 
-    margin-bottom:30px;
+margin-bottom:30px;
 }
 
 .contact-details{
 
-    display:flex;
+display:flex;
 
-    flex-direction:column;
+flex-direction:column;
 
-    gap:18px;
+gap:18px;
 }
 
 .detail-card{
 
-    background:white;
+background:white;
 
-    border-radius:18px;
+border-radius:18px;
 
-    padding:22px;
+padding:22px;
 
-    border:1px solid rgba(0,0,0,.05);
+border:1px solid rgba(0,0,0,.05);
 }
 
 .detail-card strong{
 
-    display:block;
+display:block;
 
-    color:var(--green);
+color:var(--green);
 
-    margin-bottom:6px;
+margin-bottom:6px;
 }
 
 .detail-card span{
 
-    color:var(--muted);
+color:var(--muted);
 }
 
 .contact-form{
 
-    display:flex;
+display:flex;
 
-    flex-direction:column;
+flex-direction:column;
 
-    gap:18px;
+gap:18px;
 }
 
 .contact-form input,
 .contact-form textarea{
 
-    width:100%;
+width:100%;
 
-    padding:16px;
+padding:16px;
 
-    border-radius:14px;
+border-radius:14px;
 
-    border:1px solid #E3E7E5;
+border:1px solid #E3E7E5;
 
-    font-family:inherit;
+font-family:inherit;
 
-    font-size:1rem;
+font-size:1rem;
 
-    transition:.3s ease;
+transition:.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus{
 
-    outline:none;
+outline:none;
 
-    border-color:var(--green);
+border-color:var(--green);
 
-    box-shadow:
-    0 0 0 4px rgba(47,110,90,.08);
+box-shadow:
+0 0 0 4px rgba(47,110,90,.08);
 }
 
 .contact-form button{
 
-    background:var(--green);
+background:var(--green);
 
-    color:white;
+color:white;
 
-    border:none;
+border:none;
 
-    border-radius:14px;
+border-radius:14px;
 
-    padding:18px;
+padding:18px;
 
-    font-size:1rem;
+font-size:1rem;
 
-    font-weight:600;
+font-weight:600;
 
-    cursor:pointer;
+cursor:pointer;
 
-    transition:.3s ease;
+transition:.3s ease;
 }
 
 .contact-form button:hover{
 
-    background:var(--green-light);
+background:var(--green-light);
 
-    transform:translateY(-3px);
+transform:translateY(-3px);
 
-    box-shadow:
-    0 20px 45px rgba(50,50,50,.18);
+box-shadow:
+0 20px 45px rgba(50,50,50,.18);
 }
 
 </style>
 
 <section class="scroll-section">
 
-    <div class="scroll-track">
+<div class="scroll-track">
 
-        <div class="feature-card">
-            <h3>Premium Results</h3>
-            <p>Meticulous workmanship designed to exceed expectations and showcase every vehicle at its best.</p>
-        </div>
+<div class="feature-card">
+<h3>Premium Results</h3>
+<p>Meticulous workmanship designed to exceed expectations and showcase every vehicle at its best.</p>
+</div>
 
-        <div class="feature-card">
-            <h3>Mobile Convenience</h3>
-            <p>Professional detailing services delivered directly to your home or workplace.</p>
-        </div>
+<div class="feature-card">
+<h3>Mobile Convenience</h3>
+<p>Professional detailing services delivered directly to your home or workplace.</p>
+</div>
 
-        <div class="feature-card">
-            <h3>Paint Protection</h3>
-            <p>Preserve your vehicle's finish with carefully selected protection systems.</p>
-        </div>
+<div class="feature-card">
+<h3>Paint Protection</h3>
+<p>Preserve your vehicle's finish with carefully selected protection systems.</p>
+</div>
 
-        <div class="feature-card">
-            <h3>Ceramic Coatings</h3>
-            <p>Durable gloss, easier maintenance and long-term surface protection.</p>
-        </div>
+<div class="feature-card">
+<h3>Ceramic Coatings</h3>
+<p>Durable gloss, easier maintenance and long-term surface protection.</p>
+</div>
 
-        <div class="feature-card">
-            <h3>Professional Equipment</h3>
-            <p>Built around premium detailing equipment chosen for exceptional results.</p>
-        </div>
+<div class="feature-card">
+<h3>Professional Equipment</h3>
+<p>Built around premium detailing equipment chosen for exceptional results.</p>
+</div>
 
-        <div class="feature-card">
-            <h3>Fully Insured</h3>
-            <p>Confidence and peace of mind from a professional service provider.</p>
-        </div>
+<div class="feature-card">
+<h3>Fully Insured</h3>
+<p>Confidence and peace of mind from a professional service provider.</p>
+</div>
 
-        <!-- Duplicate set for seamless scrolling -->
+<!-- Duplicate set for seamless scrolling -->
 
-        <div class="feature-card">
-            <h3>Premium Results</h3>
-            <p>Meticulous workmanship designed to exceed expectations and showcase every vehicle at its best.</p>
-        </div>
+<div class="feature-card">
+<h3>Premium Results</h3>
+<p>Meticulous workmanship designed to exceed expectations and showcase every vehicle at its best.</p>
+</div>
 
-        <div class="feature-card">
-            <h3>Mobile Convenience</h3>
-            <p>Professional detailing services delivered directly to your home or workplace.</p>
-        </div>
+<div class="feature-card">
+<h3>Mobile Convenience</h3>
+<p>Professional detailing services delivered directly to your home or workplace.</p>
+</div>
 
-        <div class="feature-card">
-            <h3>Paint Protection</h3>
-            <p>Preserve your vehicle's finish with carefully selected protection systems.</p>
-        </div>
+<div class="feature-card">
+<h3>Paint Protection</h3>
+<p>Preserve your vehicle's finish with carefully selected protection systems.</p>
+</div>
 
-        <div class="feature-card">
-            <h3>Ceramic Coatings</h3>
-            <p>Durable gloss, easier maintenance and long-term surface protection.</p>
-        </div>
+<div class="feature-card">
+<h3>Ceramic Coatings</h3>
+<p>Durable gloss, easier maintenance and long-term surface protection.</p>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <section class="trust-section">
 
-    <div class="trust-box">
+<div class="trust-box">
 
-        <h3>Professional Standards</h3>
+<h3>Professional Standards</h3>
 
-        <p>
-            Every service is performed using professional-grade equipment,
-            premium products and proven detailing techniques.
-        </p>
+<p>
+Every service is performed using professional-grade equipment,
+premium products and proven detailing techniques.
+</p>
 
-    </div>
+</div>
 
-    <div class="trust-box">
+<div class="trust-box">
 
-        <h3>Customer Focused</h3>
+<h3>Customer Focused</h3>
 
-        <p>
-            A personalised service experience built around communication,
-            convenience and exceptional outcomes.
-        </p>
+<p>
+A personalised service experience built around communication,
+convenience and exceptional outcomes.
+</p>
 
-    </div>
+</div>
 
-    <div class="trust-box">
+<div class="trust-box">
 
-        <h3>Attention To Detail</h3>
+<h3>Attention To Detail</h3>
 
-        <p>
-            From paintwork to interior finishes, every detail receives
-            the care and attention it deserves.
-        </p>
+<p>
+From paintwork to interior finishes, every detail receives
+the care and attention it deserves.
+</p>
 
-    </div>
+</div>
 
 </section>
 
 <section class="contact-section">
 
-    <div class="contact-panel">
+<div class="contact-panel">
 
-        <div class="contact-info">
+<div class="contact-info">
 
-            <span class="section-tag">
-                CONTACT
-            </span>
+<span class="section-tag">
+CONTACT
+</span>
 
-            <h2>
-                Get In Touch
-            </h2>
+<h2>
+Get In Touch
+</h2>
 
-            <p>
-                Whether you're seeking a quote, have questions about upcoming services,
-                or would like to be notified when bookings officially open,
-                we'd love to hear from you.
-            </p>
+<p>
+Whether you're seeking a quote, have questions about upcoming services,
+or would like to be notified when bookings officially open,
+we'd love to hear from you.
+</p>
 
-            <div class="contact-details">
+<div class="contact-details">
 
-                <div class="detail-card">
-                    <strong>Email</strong>
-                    <span>admin@reverent.com.au</span>
-                </div>
+<div class="detail-card">
+<strong>Email</strong>
+<span>admin@reverent.com.au</span>
+</div>
 
-                <div class="detail-card">
-                    <strong>Service Area</strong>
-                    <span>Gold Coast & Surrounding Areas</span>
-                </div>
+<div class="detail-card">
+<strong>Service Area</strong>
+<span>Gold Coast & Surrounding Areas</span>
+</div>
 
-                <div class="detail-card">
-                    <strong>Status</strong>
-                    <span>Preparing For Launch</span>
-                </div>
+<div class="detail-card">
+<strong>Status</strong>
+<span>Preparing For Launch</span>
+</div>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-        <form
-            action="https://formspree.io/f/xlgkqkyg"
-            method="POST"
-            class="contact-form">
+<form
+action="https://formspree.io/f/xlgkqkyg"
+method="POST"
+class="contact-form">
 
-            <input
-                type="hidden"
-                name="_subject"
-                value="New Reverent Website Enquiry">
+<input
+type="hidden"
+name="_subject"
+value="New Reverent Website Enquiry">
 
-            <input
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                required>
+<input
+type="text"
+name="name"
+placeholder="Full Name"
+required>
 
-            <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                required>
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
 
-            <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number">
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number">
 
-            <textarea
-                name="message"
-                rows="6"
-                placeholder="How can we help?"
-                required></textarea>
+<textarea
+name="message"
+rows="6"
+placeholder="How can we help?"
+required></textarea>
 
-            <button type="submit">
-                Send Enquiry
-            </button>
+<button type="submit">
+Send Enquiry
+</button>
 
-        </form>
+</form>
 
-    </div>
+</div>
 
 </section>
+
 <style>
 
 /* ===================================
@@ -911,59 +913,59 @@ SERVICE AREA
 
 .service-area{
 
-    max-width:1200px;
+max-width:1200px;
 
-    margin:0 auto 120px;
+margin:0 auto 120px;
 
-    padding:0 30px;
+padding:0 30px;
 }
 
 .service-card{
 
-    background:var(--glass);
+background:var(--glass);
 
-    backdrop-filter:blur(18px);
+backdrop-filter:blur(18px);
 
-    border-radius:35px;
+border-radius:35px;
 
-    padding:60px;
+padding:60px;
 
-    text-align:center;
+text-align:center;
 
-    border:1px solid rgba(255,255,255,.95);
+border:1px solid rgba(255,255,255,.95);
 
-    box-shadow:
-    0 10px 35px rgba(0,0,0,.04);
+box-shadow:
+0 10px 35px rgba(0,0,0,.04);
 
-    transition:.35s ease;
+transition:.35s ease;
 }
 
 .service-card:hover{
 
-    transform:translateY(-6px);
+transform:translateY(-6px);
 
-    box-shadow:
-    0 25px 60px rgba(55,55,55,.18);
+box-shadow:
+0 25px 60px rgba(55,55,55,.18);
 }
 
 .service-card h2{
 
-    color:var(--green);
+color:var(--green);
 
-    font-size:2.5rem;
+font-size:2.5rem;
 
-    margin-bottom:25px;
+margin-bottom:25px;
 }
 
 .service-card p{
 
-    max-width:850px;
+max-width:850px;
 
-    margin:0 auto 20px;
+margin:0 auto 20px;
 
-    color:var(--muted);
+color:var(--muted);
 
-    line-height:1.9;
+line-height:1.9;
 }
 
 /* ===================================
@@ -972,69 +974,69 @@ GALLERY
 
 .gallery-section{
 
-    max-width:1400px;
+max-width:1400px;
 
-    margin:0 auto 120px;
+margin:0 auto 120px;
 
-    padding:0 30px;
+padding:0 30px;
 }
 
 .gallery-header{
 
-    text-align:center;
+text-align:center;
 
-    margin-bottom:50px;
+margin-bottom:50px;
 }
 
 .gallery-header h2{
 
-    font-size:2.8rem;
+font-size:2.8rem;
 
-    color:var(--green);
+color:var(--green);
 
-    margin-bottom:15px;
+margin-bottom:15px;
 }
 
 .gallery-header p{
 
-    color:var(--muted);
+color:var(--muted);
 
-    max-width:700px;
+max-width:700px;
 
-    margin:auto;
+margin:auto;
 
-    line-height:1.8;
+line-height:1.8;
 }
 
 .gallery-grid{
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(3,1fr);
 
-    gap:25px;
+gap:25px;
 }
 
 .gallery-grid img{
 
-    width:100%;
+width:100%;
 
-    display:block;
+display:block;
 
-    border-radius:24px;
+border-radius:24px;
 
-    transition:.4s ease;
+transition:.4s ease;
 
-    box-shadow:
-    0 10px 35px rgba(0,0,0,.05);
+box-shadow:
+0 10px 35px rgba(0,0,0,.05);
 }
 
 .gallery-grid img:hover{
 
-    transform:scale(1.03);
+transform:scale(1.03);
 
-    box-shadow:
-    0 30px 70px rgba(50,50,50,.20);
+box-shadow:
+0 30px 70px rgba(50,50,50,.20);
 }
 
 /* ===================================
@@ -1043,45 +1045,45 @@ FOOTER
 
 footer{
 
-    background:white;
+background:white;
 
-    border-top:1px solid rgba(0,0,0,.05);
+border-top:1px solid rgba(0,0,0,.05);
 
-    text-align:center;
+text-align:center;
 
-    padding:80px 30px;
+padding:80px 30px;
 }
 
 .footer-logo{
 
-    width:90px;
+width:90px;
 
-    margin-bottom:25px;
+margin-bottom:25px;
 }
 
 footer h3{
 
-    color:var(--green);
+color:var(--green);
 
-    margin-bottom:12px;
+margin-bottom:12px;
 }
 
 footer p{
 
-    color:var(--muted);
+color:var(--muted);
 
-    line-height:1.8;
+line-height:1.8;
 }
 
 .footer-divider{
 
-    width:100px;
+width:100px;
 
-    height:2px;
+height:2px;
 
-    background:rgba(47,110,90,.2);
+background:rgba(47,110,90,.2);
 
-    margin:25px auto;
+margin:25px auto;
 }
 
 /* ===================================
@@ -1090,83 +1092,100 @@ MOBILE
 
 @media(max-width:1100px){
 
-    .vision-card{
+.vision-card{
 
-        grid-template-columns:1fr;
-    }
+grid-template-columns:1fr;
+}
 
-    .trust-section{
+.trust-section{
 
-        grid-template-columns:1fr;
-    }
+grid-template-columns:1fr;
+}
 
-    .gallery-grid{
+.gallery-grid{
 
-        grid-template-columns:1fr;
-    }
+grid-template-columns:1fr;
+}
 
-    .contact-panel{
+.contact-panel{
 
-        grid-template-columns:1fr;
-    }
+grid-template-columns:1fr;
+}
 
 }
 
 @media(max-width:768px){
 
-    header{
+header{
 
-        flex-direction:column;
+position:static;
 
-        gap:20px;
+flex-direction:column;
 
-        padding:20px;
-    }
+gap:12px;
 
-    .hero{
+padding:14px 20px;
+}
 
-        padding-top:60px;
-    }
+.header-logo{
 
-    .hero-title{
+width:55px;
+}
 
-        font-size:2.6rem;
-    }
+.qr-link img{
 
-    .hero-card{
+width:52px;
+}
 
-        padding:30px;
-    }
+.qr-link{
 
-    .vision-card{
+font-size:.75rem;
+}
 
-        padding:35px;
-    }
+.hero{
 
-    .contact-panel{
+padding-top:60px;
+}
 
-        padding:35px;
-    }
+.hero-title{
 
-    .service-card{
+font-size:2.6rem;
+}
 
-        padding:40px 25px;
-    }
+.hero-card{
 
-    .gallery-header h2{
+padding:30px;
+}
 
-        font-size:2.1rem;
-    }
+.vision-card{
 
-    .service-card h2{
+padding:35px;
+}
 
-        font-size:2rem;
-    }
+.contact-panel{
 
-    .contact-info h2{
+padding:35px;
+}
 
-        font-size:2rem;
-    }
+.service-card{
+
+padding:40px 25px;
+}
+
+.gallery-header h2{
+
+font-size:2.1rem;
+}
+
+.service-card h2{
+
+font-size:2rem;
+}
+
+.contact-info h2{
+
+font-size:2rem;
+}
 
 }
 
@@ -1174,103 +1193,102 @@ MOBILE
 
 <section class="service-area">
 
-    <div class="service-card">
+<div class="service-card">
 
-        <h2>
-            Mobile Detailing Across The Gold Coast
-        </h2>
+<h2>
+Mobile Detailing Across The Gold Coast
+</h2>
 
-        <p>
-            Reverent Automotive Detailing brings premium vehicle care directly
-            to your home or workplace. Built around professional equipment,
-            premium products and meticulous attention to detail, our goal is
-            to deliver exceptional results with unmatched convenience.
-        </p>
+<p>
+Reverent Automotive Detailing brings premium vehicle care directly
+to your home or workplace. Built around professional equipment,
+premium products and meticulous attention to detail, our goal is
+to deliver exceptional results with unmatched convenience.
+</p>
 
-        <p>
-            Service availability, launch dates and booking information will
-            be announced through our website and social media channels.
-        </p>
+<p>
+Service availability, launch dates and booking information will
+be announced through our website and social media channels.
+</p>
 
-    </div>
+</div>
 
 </section>
 
 <section class="gallery-section">
 
-    <div class="gallery-header">
+<div class="gallery-header">
 
-        <span class="section-tag">
-            RECENT RESULTS
-        </span>
+<span class="section-tag">
+RECENT RESULTS
+</span>
 
-        <h2>
-            Real Vehicles. Real Results.
-        </h2>
+<h2>
+Real Vehicles. Real Results.
+</h2>
 
-        <p>
-            Every vehicle receives the same level of care, attention and respect.
-            These images showcase the standards Reverent Automotive Detailing
-            is committed to delivering.
-        </p>
+<p>
+Every vehicle receives the same level of care, attention and respect.
+These images showcase the standards Reverent Automotive Detailing
+is committed to delivering.
+</p>
 
-    </div>
+</div>
 
-    <div class="gallery-grid">
+<div class="gallery-grid">
 
-        <img
-            src="BMW-X3M40I-1.png"
-            alt="Vehicle Detail Result">
+<img
+src="BMW-X3M40I-1.png"
+alt="Vehicle Detail Result">
 
-        <img
-            src="BMW-X3M40I-2.png"
-            alt="Vehicle Detail Result">
+<img
+src="BMW-X3M40I-2.png"
+alt="Vehicle Detail Result">
 
-        <img
-            src="BMW-320I-1.png"
-            alt="Vehicle Detail Result">
+<img
+src="BMW-320I-1.png"
+alt="Vehicle Detail Result">
 
-        <img
-            src="BMW-320I-2.png"
-            alt="Vehicle Detail Result">
+<img
+src="BMW-320I-2.png"
+alt="Vehicle Detail Result">
 
-          <img
-            src="MAZDA-3SP25-1.png"
-            alt="Vehicle Detail Result">          
+<img
+src="MAZDA-3SP25-1.png"
+alt="Vehicle Detail Result">
 
-        <img
-            src="MAZDA-3SP25-2.png"
-            alt="Vehicle Detail Result">
+<img
+src="MAZDA-3SP25-2.png"
+alt="Vehicle Detail Result">
 
-    </div>
+</div>
 
 </section>
 
 <footer>
 
-    <img
-        src="R-logo.png"
-        alt="Reverent Logo"
-        class="footer-logo">
+<img
+src="R-logo.png"
+alt="Reverent Logo"
+class="footer-logo">
 
-    <h3>
-        Reverent Automotive Detailing
-    </h3>
+<h3>
+Reverent Automotive Detailing
+</h3>
 
-    <p>
-        Premium Mobile Automotive Detailing
-    </p>
+<p>
+Premium Mobile Automotive Detailing
+</p>
 
-    <div class="footer-divider"></div>
+<div class="footer-divider"></div>
 
-    <p>
-        Gold Coast • Queensland • Australia
-    </p>
+<p>
+Gold Coast • Queensland • Australia
+</p>
 
-    <p>
-        admin@reverent.com.au
-    </p>
-
+<p>
+admin@reverent.com.au
+</p>
 
 </footer>
 
